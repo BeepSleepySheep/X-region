@@ -86,12 +86,9 @@ gradle :app:assembleDebug
 
 ## 致谢
 
-基本原理：
 - X @k1uchanQ
-实现：
 - Xposed API
 - AndroidX / Jetpack Compose
-界面：
 - SukiSU-Ultra
 - Miuix
 - AndroidLiquidGlass
