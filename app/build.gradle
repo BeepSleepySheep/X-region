@@ -11,8 +11,8 @@ android {
         applicationId "com.example.xregion"
         minSdk 26
         targetSdk 36
-        versionCode 13
-        versionName "13.0"
+        versionCode 1
+        versionName "0.1"
     }
 
     compileOptions {
