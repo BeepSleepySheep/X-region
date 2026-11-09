@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="X 国家代码伪装"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="仅对 com.twitter.android 生效。国家代码（两位字母）"
+        android:textSize="11sp" />
+
+    <EditText
+        android:id="@+id/input_iso"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="us"
+        android:inputType="text"
+        android:maxLength="2"
+        android:singleLine="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_preset_us"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="us"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_preset_jp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="jp"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_preset_hk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="hk"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_preset_tw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="tw"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_preset_cn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="cn"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_preset_gb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="0dp"
+            android:text="gb"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <Switch
+        android:id="@+id/switch_sim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同时伪装 SIM 国家（默认关）"
+        android:textSize="12sp" />
+
+    <Switch
+        android:id="@+id/switch_ss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="同时伪装 ServiceState 国家（默认开）"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="6dp"
+        android:text="保存并应用" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="运行日志（X 侧 + App 侧）"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:text="刷新"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:padding="0dp"
+            android:text="清空"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:minHeight="200dp"
+        android:background="#11000000">
+
+        <TextView
+            android:id="@+id/text_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="11sp"
+            android:typeface="monospace" />
+    </ScrollView>
+
+</LinearLayout>
